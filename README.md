@@ -8,6 +8,16 @@ https://sqlite-database.readthedocs.io/en/latest/
 
 https://www.w3schools.com/sql/
 
+# 프론트 모듈
+- Flask + Jinja2
+- flask 공식문서
+https://flask.palletsprojects.com/en/stable/
+###  포기
+- streamlit 시작
+- 공식문서
+https://docs.streamlit.io/
+- DB 연결
+https://docs.streamlit.io/get-started/fundamentals/advanced-concepts
 
 
 
