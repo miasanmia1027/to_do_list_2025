@@ -6,6 +6,10 @@ SQL은 Structured Query Language의 약자로, 데이터베이스를 조작하�
 - 공식 문서
 https://sqlite-database.readthedocs.io/en/latest/
 
+https://wikidocs.net/book/1530
+
+
+
 https://www.w3schools.com/sql/
 
 # 프론트 모듈
