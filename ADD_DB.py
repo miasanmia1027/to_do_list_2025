@@ -4,7 +4,7 @@ from functions import add_list_DB
 
 st.title("ADD_LIST")
 
-connect = sqlite3.connect('D:/DataBase/to_do_list_2025.db')
+connect = sqlite3.connect('to_do_list_2025.db')
 cursor = connect.cursor()
 
 cursor.execute("SELECT COUNT(*) FROM to_do_list;")

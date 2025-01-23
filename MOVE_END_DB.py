@@ -3,7 +3,7 @@ import sqlite3
 from functions import Finish_LIST,check_our_db
 
 st.title("MOVE_END_DB")
-connect = sqlite3.connect('D:/DataBase/to_do_list_2025.db')
+connect = sqlite3.connect('to_do_list_2025.db')
 cursor = connect.cursor()
 
 #finish 가 0인것만 출력을 하게 한다.
