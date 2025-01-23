@@ -27,3 +27,18 @@ https://docs.streamlit.io/get-started/fundamentals/advanced-concepts
 
 # 서버에 올리는 법
 - Flask
+
+
+
+
+# 코드 설명 
+- ADD_DB == 사용자가 자기가 해야 하는 작업을 올리는 페이지
+- MOVE_END_DB == 사용자가 추가한 목록을 finish를 1로 바꾸는 작업
+- MOVE_LIST_DB == 사용자가 잘못 옮긴 코드를 다시 불러오는 작업
+- DELETE_DB == 잘못 추가한 열을 삭제하는 코드
+
+
+### 내가 해야 하는거 
+1. 이거를 폴더와 파일 느낌으로 바꿔서 내가 편하게 넣기
+2. 프론트를 이쁘게 변경해야함
+3. 이거를 서버에 올려야 한다.
