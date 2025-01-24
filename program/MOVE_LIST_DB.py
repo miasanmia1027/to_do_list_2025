@@ -1,6 +1,6 @@
 import streamlit as st
 import sqlite3
-from functions import Finish_LIST,check_our_db
+from program.functions import Finish_LIST,check_our_db
 
 st.title("MOVE_LIST_DB")
 connect = sqlite3.connect('to_do_list_2025.db')

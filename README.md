@@ -41,6 +41,10 @@ https://docs.streamlit.io/get-started/fundamentals/advanced-concepts
 
 
 ### 내가 해야 하는거 
-1. 이거를 폴더와 파일 느낌으로 바꿔서 내가 편하게 넣기
-2. 프론트를 이쁘게 변경해야함
-3. 이거를 서버에 올려야 한다.
+1. 이제 해야하는거는 delte를 사용하면 프로그램이 먹통이 되는거 -> delete를 할때 음수로 바꾸는 거 생각하기
+2. ADD_GROUP_DB할때 numbring만 쓰지말고 group도 쓰고
+3. end 시킬때 날짜를 넣는거 넣기
+4. st.session_state를 다른 코드에도 넣기
+5. 구룹별로 보이기 하는걸로 바꾸기
+
+

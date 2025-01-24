@@ -1,8 +1,8 @@
 import streamlit as st
 import sqlite3
-from functions import Finish_LIST,check_our_db
+from program.functions import Finish_LIST,check_our_db
 
-st.title("DELETE_DB")
+st.title("MOVE_END_DB")
 connect = sqlite3.connect('to_do_list_2025.db')
 cursor = connect.cursor()
 
@@ -12,8 +12,8 @@ DB_LIST = cursor.fetchall()
 for i in range(len(DB_LIST)):
     st.write(i+1,DB_LIST[i])
 
-prompt = st.chat_input("몇번을 삭제하고 싶은지 알려주세요")
+prompt = st.chat_input("몇번을 끝냈는지 알려주세요")
 if prompt:
-    cursor.execute(f"DELETE FROM to_do_list WHERE numbering = {prompt};")
+    cursor.execute(f"UPDATE to_do_list SET finish = 1 WHERE numbering = {prompt};")
     connect.commit() 
 
