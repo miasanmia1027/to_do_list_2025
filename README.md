@@ -27,8 +27,7 @@ https://docs.streamlit.io/get-started/fundamentals/advanced-concepts
 
 # 서버에 올리는 법
 - Streamlit Community Cloud
-- todolist2025-olms5my9e7g248qzbufxan
-.streamlit.app
+- https://todolist2025-olms5my9e7g248qzbufxan.streamlit.app/
 
 
 
