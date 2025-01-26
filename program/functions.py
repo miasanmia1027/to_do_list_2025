@@ -1,13 +1,13 @@
 import sqlite3
-def add_list_DB(what_i_do, date_start, numbering,group):
+def add_list_DB(what_i_do, date_start,group):
     connect = sqlite3.connect('to_do_list_2025.db')
     cursor = connect.cursor()
     # 리스트를 문자열로 변환 (예: ["A", "B"] -> "A,B")
     group_str = ",".join(group) if isinstance(group, list) else group
     cursor.execute("""
-    INSERT INTO to_do_list (what_i_do, date_start, numbering, finish, date_end, grouplist)
-    VALUES (?, ?, ?, ?, ?, ?)
-    """, (what_i_do, date_start, numbering, 0,None,group_str))
+    INSERT INTO to_do_list (what_i_do, date_start, finish, date_end, grouplist)
+    VALUES (?, ?, ?, ?, ?)
+    """, (what_i_do, date_start, 0,None,group_str))
     connect.commit()
     connect.close()
 

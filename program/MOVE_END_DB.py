@@ -14,6 +14,6 @@ for i in range(len(DB_LIST)):
 
 prompt = st.chat_input("몇번을 끝냈는지 알려주세요")
 if prompt:
-    cursor.execute(f"UPDATE to_do_list SET finish = 1 WHERE numbering = {prompt};")
+    cursor.execute(f"UPDATE to_do_list SET finish = 1 WHERE id = {prompt};")
     connect.commit() 
 

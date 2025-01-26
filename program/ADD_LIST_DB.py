@@ -2,15 +2,7 @@ import streamlit as st
 import sqlite3
 from program.functions import add_list_DB,group_list
 
-
 st.title("ADD_LIST_DB")
-
-connect = sqlite3.connect('to_do_list_2025.db')
-cursor = connect.cursor()
-
-cursor.execute("SELECT COUNT(*) FROM to_do_list;")
-DB_count = cursor.fetchone()[0] 
-# key 중복을 피하기 위해서 기존에 몇개의 열을 가지고 있는지 확인 하는 코드
 
 # Prompt 입력값 상태 관리
 if "prompt" not in st.session_state:
@@ -49,7 +41,6 @@ if st.button("추가하기"):
         add_list_DB(
             st.session_state.prompt,
             st.session_state.choose_date,
-            DB_count + 1,
             st.session_state.group
         )
         st.success("작업이 성공적으로 추가되었습니다!")

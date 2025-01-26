@@ -14,6 +14,6 @@ for i in range(len(DB_LIST)):
 
 prompt = st.chat_input("몇번을 삭제하고 싶은지 알려주세요")
 if prompt:
-    cursor.execute(f"DELETE FROM to_do_list WHERE numbering = {prompt};")
+    cursor.execute(f"DELETE FROM to_do_list WHERE id = {prompt};")
     connect.commit() 
 
