@@ -12,8 +12,21 @@ DB_LIST = cursor.fetchall()
 for i in range(len(DB_LIST)):
     st.write(i+1,DB_LIST[i])
 
-prompt = st.chat_input("몇번을 끝냈는지 알려주세요")
+# 날짜 선택
+choose_date = st.date_input("작업 완료 날짜를 선택하세요")
+
+# 작업 번호 입력
+prompt = st.chat_input("몇 번 작업을 완료했는지 입력하세요")
+
 if prompt:
-    cursor.execute(f"UPDATE to_do_list SET finish = 1 WHERE id = {prompt};")
-    connect.commit() 
+    cursor.execute(f"""
+        UPDATE to_do_list 
+        SET finish = 1, date_end = ? 
+        WHERE rowid = ?;
+        """, (choose_date, prompt))
+    connect.commit()
+    st.success(f"작업 {prompt}이 완료 처리되었습니다!")
+   
+
+
 

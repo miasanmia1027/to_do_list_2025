@@ -10,7 +10,7 @@ def add_list_DB(what_i_do, date_start,group):
     """, (what_i_do, date_start, 0,None,group_str))
     connect.commit()
     connect.close()
-
+# numbering
 def add_group_DB(group_input):
     connect = sqlite3.connect('group_table.db')
     cursor = connect.cursor()
@@ -34,7 +34,7 @@ def group_list():
 def Finish_LIST(what_numbering):
     connect = sqlite3.connect('to_do_list_2025.db')
     cursor = connect.cursor()
-    cursor.execute(f"UPDATE to_do_list SET finish = 1 WHERE numbering = {what_numbering};")
+    cursor.execute(f"UPDATE to_do_list SET finish = 1 WHERE id = {what_numbering};")
     connect.commit() 
 
 def check_our_db():

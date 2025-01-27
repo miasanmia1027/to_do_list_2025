@@ -19,6 +19,7 @@ st.session_state.group = st.multiselect(
 st.write(f"선택된 그룹: {st.session_state.group}")
 
 # 선택된 그룹 데이터를 문자열로 변환
+# -> 자꾸 문제가 리스트로 가만히 놓으면 문제가 있어서 문자열로 바꿔야 한다.
 if st.session_state.group:
     group_query = ",".join(st.session_state.group)  # 리스트를 쉼표로 구분된 문자열로 변환
     cursor.execute(f"SELECT * FROM to_do_list WHERE grouplist LIKE '%{group_query}%';")

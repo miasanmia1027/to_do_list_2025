@@ -40,10 +40,10 @@ https://docs.streamlit.io/get-started/fundamentals/advanced-concepts
 
 
 ### 내가 해야 하는거 
-1. 이제 해야하는거는 delte를 사용하면 프로그램이 먹통이 되는거 -> delete를 할때 음수로 바꾸는 거 생각하기 -> 이거 오늘 해야지
-2. ADD_GROUP_DB할때 numbring만 쓰지말고 group도 쓰고
-3. end 시킬때 날짜를 넣는거 넣기
-4. st.session_state를 다른 코드에도 넣기
-5. 구룹별로 보이기 하는걸로 바꾸기  -> 구룹을 선택하라고 하면서 하게 하는건가?
+- 현재로써는 다했다.
+-> 일단 지금 list를 간략화를 해야겠다.
+
+
+
 
 
